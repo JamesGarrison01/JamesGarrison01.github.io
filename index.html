@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baker for City Council</title>
+  <link rel="shortcut icon" type="image/ico" href="img/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <style>
+  </style>
+</head>
+
+<body id="top">
+  <header>
+    <h2><a href="#" target="_blank"><img src="img/" alt=""></a></h2>
+    <nav>
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#mission">Misson</a></li>
+        <li><a href="#quotes">Quotes</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#social-media">Links</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ******************************** -->
+  <div id="hero">
+    <div class="background-image"></div>
+    <h1>Maxfield Baker</h1>
+    <h3>For City Council Place 1<br>San Marcos, Texas</h3>
+    <a href="" class="btn" target="_blank"> Donate</a>
+
+  </div>
+  <!-- ******************************** -->
+  <div id="about">
+    <h3 class="title">About Me</h3>
+    <div id="two-cols">
+      <div class="about-img"><img src="img/Maxlarger.jpg" alt="MaxProfile"></div>
+      <div class="about-bio">
+        <p> To be filled</p>
+      </div>
+      <p>&nbsp;</p>
+    </div>
+    <hr>
+  </div>
+  <!-- ******************************** -->
+  <div id="gallery" class="photo-gallery">
+    <h3 class="title">Gallery</h3>
+
+    <hr>
+    <ul class="grid">
+      <li class="small" style="background-image: url('img/river.jpg');"></li>
+      <li class="large" style="background-image: url('img/pinkCancer.jpg');"></li>
+      <li class="small" style="background-image: url('img/Cup.jpg');"></li>
+      <li class="large" style="background-image: url('img/riverP.jpg');"></li>
+    </ul>
+  </div>
+  <hr>
+  <!-- ******************************** -->
+  <div id="mission">
+    <h3 class="title">Baker's Mission</h3>
+    <p>
+    </p>
+    <ul class="grid">
+      <li><i class="fas fa-tree ico"></i>
+        <h4>Preservation</h4>
+        <p>Protecting our neighborhoods from unsuitable development fighting for our enviornment, and our future</p>
+      </li>
+      <li><i class="fas fa-male ico"></i>
+        <h4>Purpose</h4>
+        <p>Cruise Ships A passenger ship used for pleasure voyages, where the voyage itself and the ship's amenities are a part of the experience.</p>
+      </li>
+      <li><i class="fas fa-building ico"></i>
+        <h4>Policy</h4>
+        <p>Guide soultions by leveraging city resources, and bolstering code compliance staff.</p>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ******************************** -->
+  <div id="quotes">
+    <hr>
+    <h3 class="title">What Others Our Saying</h3>
+    <p class="portrait"><img src="img/maxb.jpg" alt="Person" class="portrait-photos"></p>
+    <p class="quote">&ldquo;I am max and I do max things.&rdquo;</p>
+    <p class="author">&mdash; Max maybe</p>
+    <p class="portrait"><img src="img/maxb.jpg" alt="Person1" class="portrait-photos"></p>
+    <p class="quote">&ldquo;I am max and I do max things.&rdquo;</p>
+    <p class="author">&mdash; Max maybe</p>
+    <p class="portrait"><img src="img/maxb.jpg" alt="Person2" class="portrait-photos"></p>
+    <p class="quote">&ldquo;I am max and I do max things.&rdquo;</p>
+    <p class="author">&mdash; Max maybe</p>
+    <hr>
+  </div>
+  <!-- ******************************** -->
+  <div id="contact">
+    <h3 class="title">Contact Baker</h3>
+    <section class="flexbox-section">
+      <p>
+        512-393-4287<br>Bakermaxfield@gmail.com<br> San Marcos, TX, 78666<br> United States
+      </p>
+    </section>
+  </div>
+  <!-- ******************************** -->
+  <div id="contact-form">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7KG6xGF_qG6Gq0OaJ_lSDN94rWM1vntOCK0LDGPDg1ss9KQ/viewform?embedded=true" width="100%" height="1250" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+  </div>
+  <!-- ******************************** -->
+  <footer id="social-media">
+    <ul>
+      <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
+    </ul>
+  </footer>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+          'scrollTop': $target.offset().top - 100
+        }, 900, 'swing', function() {
+          window.location.hash = target - 100;
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
